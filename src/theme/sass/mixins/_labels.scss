@@ -1,0 +1,13 @@
+@mixin label-variant($state, $bgColor, $textColor) {
+    .label-#{$state} {
+        color: $textColor;
+        background-color: $bgColor;
+    }
+}
+
+@mixin badge-variant($state, $bgColor, $textColor) {
+    .badge-#{$state} {
+        color: $textColor;
+        background-color: $bgColor;
+    }
+}

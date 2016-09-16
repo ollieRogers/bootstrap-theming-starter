@@ -1,0 +1,9 @@
+@mixin list-group-variant($state, $stateColor, $stateColorBg){
+    a.list-group-item,
+    .list-group-item {
+        &.list-group-item-#{$state}{
+            color: $stateColor;
+            background-color: $stateColorBg;
+        }
+    }
+}

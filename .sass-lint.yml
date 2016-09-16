@@ -1,0 +1,36 @@
+options:
+    formatter: stylish
+    merge-default-rules: false
+files:
+    ignore:
+        - 'src/theme/sass/mixins/**/*.scss'
+        - 'src/theme/sass/no-lint.scss'
+rules:
+    indentation:
+        - 2
+        -
+            size: 4
+    variable-name-format:
+        -
+            allow-leading-underscore: false
+        -
+            convention: camelcase
+    variable-for-property:
+        - 2
+        -
+            properties:
+                - color
+                - background-color
+                - border-radius
+    no-ids: 2
+    no-important: 2
+    no-mergeable-selectors: 2
+    hex-length:
+        - 2
+        -
+            style: long
+    no-warn: 2
+    no-debug: 2
+    no-universal-selectors: 2
+    no-transition-all: 2
+    no-duplicate-properties: 2

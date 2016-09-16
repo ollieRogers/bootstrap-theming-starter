@@ -1,0 +1,5 @@
+@mixin progress-bar-variation($state, $stateColor){
+        .progress-bar-#{$state} {
+            background-color: $stateColor;
+        }
+}

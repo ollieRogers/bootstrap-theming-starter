@@ -1,0 +1,23 @@
+@mixin alert-variant($state, $stateColor){
+    .alert{
+        &.alert-#{$state} {
+            color: $stateColor;
+            border-color: $stateColor;
+            background-color: $bodyBg;
+            .alert-link {
+                color: darken($stateColor, 10%);
+                &:hover {
+                    color: $stateColor;
+                }
+            }
+            button.close {
+                color:$stateColor;
+                opacity: 0.8;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+}

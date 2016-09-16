@@ -1,0 +1,9 @@
+@mixin panel-variant($state, $stateColor, $borderColor){
+    .panel-#{$state} {
+        border-color: $borderColor;
+        > .panel-heading {
+            background-color: $bodyBg;
+            color: $stateColor;
+        }
+    }
+}

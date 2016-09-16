@@ -1,0 +1,10 @@
+@mixin form-state-variant($state, $stateColor) {
+    .has-#{$state}{
+        .control-label {
+            color: $stateColor;
+        }
+        .form-control{
+            border-color: $stateColor;
+        }
+    }
+}

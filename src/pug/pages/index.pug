@@ -1,0 +1,2561 @@
+extends ../layout/layout
+
+block content
+    .container
+        .row
+            .col-md-12
+                h1.page-header Bootstrap starter
+        .row
+            .col-md-9
+                h1#css.page-header CSS
+                h2#typography Typography
+                // Headings
+                .media
+                    .media-left.media-middle
+                        h1
+                            | h1
+                            small small
+                    .media-left.media-middle
+                        .h2
+                            | .h2
+                            small small
+                    .media-left.media-middle
+                        h3
+                            | h3
+                            small small
+                    .media-left.media-middle
+                        .h4
+                            | .h4
+                            small small
+                    .media-left.media-middle
+                        h5
+                            | h5
+                            small small
+                    .media-left.media-middle
+                        .h6
+                            | .h6
+                            small small
+                .row
+                    .col-sm-8
+                        p Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                .row
+                    .col-sm-2.col-xs-4
+                        // Lead body copy
+                        span.lead .lead
+                        br
+                        // Bold
+                        b b (bold)
+                        br
+                        strong strong
+                    .col-sm-2.col-xs-4
+                        // Small text
+                        small small
+                        br
+                        span.small .small
+                    .col-sm-2.col-xs-4
+                        // Italics
+                        em em
+                        br
+                        i i (italic)
+                    // Inline text elements
+                    .col-sm-2.col-xs-4
+                        // Deleted text
+                        del del
+                        br
+                        // Strikethrough text
+                        s s (strikethrough)
+                        br
+                        // Inserted text
+                        ins ins
+                        br
+                        // Underlined text
+                        u u (underline)
+                    .col-sm-2.col-xs-4
+                        // Inline code
+                        code code
+                        br
+                        // Variables
+                        var var
+                        br
+                        // Sample output from a program
+                        samp samp
+                    .col-sm-2.col-xs-4
+                        // Marked text
+                        mark mark
+                        br
+                        // User input
+                        kbd kbd
+                br
+                // Alignment classes
+                .row
+                    .col-xs-4
+                        p.text-left .text-left
+                    .col-xs-4
+                        p.text-center .text-center
+                    .col-xs-4
+                        p.text-right .text-right
+                    .col-xs-12
+                        .text-justify .text-justify
+                br
+                // Transformation classes
+
+                span.text-lowercase .text-lowercase
+                span.text-uppercase .text-uppercase
+                span.text-capitalize .text-capitalize
+                br
+                // Abbreviations
+
+                abbr(title='abbreviation') abbr
+                abbr.initialism(title='abbreviation.initialism')
+                    | .initialism
+                br
+                // Addresses
+
+                address
+                    strong address strong
+                    br
+                    | address
+                    br
+                    a(href='mailto:#') first.last@example.com
+                // Blockquotes
+                .row
+                    .col-sm-6
+                        blockquote
+                            p blockquote p
+                            footer
+                                | blockquote footer
+                                cite(title='Cite') cite
+                    .col-sm-6
+                        blockquote.blockquote-reverse
+                            p blockquote.blockquote-reverse p
+                            footer
+                                | Someone famous in
+                                cite(title='Source Title') Source Title
+                .row
+                    // Unordered list
+                    .col-sm-4.col-xs-6
+                        p
+                            strong ul
+                        ul
+                            li li
+                            li
+                                | List item
+                                ul
+                                    li ul li
+                                    li List item
+                            li List item
+                    // Ordered list
+                    .col-sm-4.col-xs-6
+                        p
+                            strong ol
+                        ol
+                            li List item
+                            li
+                                | List item
+                                ol
+                                    li List item
+                                    li List item
+                            li List item
+                    // Unstyled list
+                    .col-sm-4.col-xs-6
+                        p
+                            strong ul.list-unstyled
+                        ul.list-unstyled
+                            li List item
+                            li
+                                | List item
+                                ul
+                                    li List item
+                                    li List item
+                            li List item
+                    // Inline list
+                    .col-sm-4.col-xs-6
+                        p
+                            strong ul.list-inline
+                        ul.list-inline
+                            li List item
+                            li List item
+                            li List item
+                .row
+                    // Description
+                    .col-xs-6
+                        p
+                            strong dl
+                        dl
+                            dt dt
+                            dd dd
+                            dt Term
+                            dd
+                                | Description
+                                br
+                                | Description
+                    // Horizontal description
+                    .col-xs-6
+                        p
+                            strong dl.dl-horizontal
+                        dl.dl-horizontal
+                            dt Term
+                            dd Description
+                            dt Long term will be truncated
+                            dd
+                                | Description
+                                br
+                                | Description
+                .row
+                    .col-md-9
+                            .section-divider
+                            h2#icons Glyphicons
+                            p
+                                a(href='http://glyphicons.com/', target='_blank') Glyphicons
+                                |  classes:
+
+                                code glyphicon glyphicon-*
+                            h3 Simple symbols
+                            ul.list-inline
+                                li
+                                    span.glyphicon.glyphicon-asterisk
+                                    |  asterisk
+                                li
+                                    span.glyphicon.glyphicon-plus
+                                    |  plus
+                                li
+                                    span.glyphicon.glyphicon-minus
+                                    |  minus
+                                li
+                                    span.glyphicon.glyphicon-ok
+                                    |  ok
+                                li
+                                    span.glyphicon.glyphicon-remove
+                                    |  remove
+                                br
+                                li
+                                    span.glyphicon.glyphicon-remove-circle
+                                    |  remove-circle
+                                li
+                                    span.glyphicon.glyphicon-ok-circle
+                                    |  ok-circle
+                                li
+                                    span.glyphicon.glyphicon-ban-circle
+                                    |  ban-circle
+                                br
+                                li
+                                    span.glyphicon.glyphicon-copyright-mark
+                                    |  copyright-mark
+                                li
+                                    span.glyphicon.glyphicon-registration-mark
+                                    |  registration-mark
+                            // Directions
+                            ul.list-inline
+                                li
+                                    span.glyphicon.glyphicon-chevron-left
+                                    |  chevron-left
+                                li
+                                    span.glyphicon.glyphicon-chevron-right
+                                    |  chevron-right
+                                li
+                                    span.glyphicon.glyphicon-chevron-up
+                                    |  chevron-up
+                                li
+                                    span.glyphicon.glyphicon-chevron-down
+                                    |  chevron-down
+                                br
+                                li
+                                    span.glyphicon.glyphicon-arrow-left
+                                    |  arrow-left
+                                li
+                                    span.glyphicon.glyphicon-arrow-right
+                                    |  arrow-right
+                                li
+                                    span.glyphicon.glyphicon-arrow-up
+                                    |  arrow-up
+                                li
+                                    span.glyphicon.glyphicon-arrow-down
+                                    |  arrow-down
+                                br
+                                li
+                                    span.glyphicon.glyphicon-hand-left
+                                    |  hand-left
+                                li
+                                    span.glyphicon.glyphicon-hand-right
+                                    |  hand-right
+                                li
+                                    span.glyphicon.glyphicon-hand-up
+                                    |  hand-up
+                                li
+                                    span.glyphicon.glyphicon-hand-down
+                                    |  hand-down
+                                li
+                                    span.glyphicon.glyphicon-thumbs-up
+                                    |  thumbs-up
+                                li
+                                    span.glyphicon.glyphicon-thumbs-down
+                                    |  thumbs-down
+                                br
+                                li
+                                    span.glyphicon.glyphicon-circle-arrow-left
+                                    |  circle-arrow-left
+                                li
+                                    span.glyphicon.glyphicon-circle-arrow-right
+                                    |  circle-arrow-right
+                                li
+                                    span.glyphicon.glyphicon-circle-arrow-up
+                                    |  circle-arrow-up
+                                li
+                                    span.glyphicon.glyphicon-circle-arrow-down
+                                    |  circle-arrow-down
+                            h3 Transfer
+                            ul.list-inline
+                                li
+                                    span.glyphicon.glyphicon-signal
+                                    |  signal
+                                li
+                                    span.glyphicon.glyphicon-envelope
+                                    |  envelope
+                                li
+                                    span.glyphicon.glyphicon-inbox
+                                    |  inbox
+                                li
+                                    span.glyphicon.glyphicon-cloud
+                                    |  cloud
+                                br
+                                li
+                                    span.glyphicon.glyphicon-cloud-download
+                                    |  cloud-download
+                                li
+                                    span.glyphicon.glyphicon-cloud-upload
+                                    |  cloud-upload
+                                li
+                                    span.glyphicon.glyphicon-download-alt
+                                    |  download-alt
+                                li
+                                    span.glyphicon.glyphicon-download
+                                    |  download
+                                li
+                                    span.glyphicon.glyphicon-upload
+                                    |  upload
+                                br
+                                li
+                                    span.glyphicon.glyphicon-transfer
+                                    |  transfer
+                                li
+                                    span.glyphicon.glyphicon-share-alt
+                                    |  share-alt
+                                li
+                                    span.glyphicon.glyphicon-send
+                                    |  send
+                                li
+                                    span.glyphicon.glyphicon-retweet
+                                    |  retweet
+
+                            h3 Functions
+                            ul.list-inline
+                                li
+                                    span.glyphicon.glyphicon-open
+                                    |  open
+                                li
+                                    span.glyphicon.glyphicon-save
+                                    |  save
+                                li
+                                    span.glyphicon.glyphicon-saved
+                                    |  saved
+                                li
+                                    span.glyphicon.glyphicon-import
+                                    |  import
+                                li
+                                    span.glyphicon.glyphicon-export
+                                    |  export
+                                br
+
+                                li
+                                    span.glyphicon.glyphicon-play
+                                    |  play
+                                li
+                                    span.glyphicon.glyphicon-pause
+                                    |  pause
+                                li
+                                    span.glyphicon.glyphicon-stop
+                                    |  stop
+                                li
+                                    span.glyphicon.glyphicon-eject
+                                    |  eject
+                                br
+                                li
+                                    span.glyphicon.glyphicon-fast-backward
+                                    |  fast-backward
+                                li
+                                    span.glyphicon.glyphicon-step-backward
+                                    |  step-backward
+                                li
+                                    span.glyphicon.glyphicon-backward
+                                    |  backward
+                                li
+                                    span.glyphicon.glyphicon-forward
+                                    |  forward
+                                li
+                                    span.glyphicon.glyphicon-step-forward
+                                    |  step-forward
+                                li
+                                    span.glyphicon.glyphicon-fast-forward
+                                    |  fast-forward
+                            h3 Display
+                            ul.list-inline
+                                li
+                                    span.glyphicon.glyphicon-zoom-in
+                                    |  zoom-in
+                                li
+                                    span.glyphicon.glyphicon-zoom-out
+                                    |  zoom-out
+                                li
+                                    span.glyphicon.glyphicon-fullscreen
+                                    |  fullscreen
+                                br
+                                li
+                                    span.glyphicon.glyphicon-resize-full
+                                    |  resize-full
+                                li
+                                    span.glyphicon.glyphicon-resize-small
+                                    |  resize-small
+                                li
+                                    span.glyphicon.glyphicon-resize-vertical
+                                    |  resize-vertical
+                                li
+                                    span.glyphicon.glyphicon-resize-horizontal
+                                    |  resize-horizontal
+                                br
+                                li
+                                    span.glyphicon.glyphicon-eye-open
+                                    |  eye-open
+                                li
+                                    span.glyphicon.glyphicon-eye-close
+                                    |  eye-close
+                            // Functions (group by style)
+                            ul.list-inline
+                                li
+                                    span.glyphicon.glyphicon-check
+                                    |  check
+                                li
+                                    span.glyphicon.glyphicon-unchecked
+                                    |  unchecked
+                                li
+                                    span.glyphicon.glyphicon-expand
+                                    |  expand
+                                li
+                                    span.glyphicon.glyphicon-collapse-down
+                                    |  collapse-down
+                                li
+                                    span.glyphicon.glyphicon-collapse-up
+                                    |  collapse-up
+                                br
+                                li
+                                    span.glyphicon.glyphicon-log-in
+                                    |  log-in
+                                li
+                                    span.glyphicon.glyphicon-log-out
+                                    |  log-out
+                                li
+                                    span.glyphicon.glyphicon-new-window
+                                    |  new-window
+                                li
+                                    span.glyphicon.glyphicon-edit
+                                    |  edit
+                                li
+                                    span.glyphicon.glyphicon-share
+                                    |  share
+                            h3 Text editor
+                            ul.list-inline
+                                li
+                                    span.glyphicon.glyphicon-font
+                                    |  font
+                                li
+                                    span.glyphicon.glyphicon-bold
+                                    |  bold
+                                li
+                                    span.glyphicon.glyphicon-italic
+                                    |  italic
+                                li
+                                    span.glyphicon.glyphicon-header
+                                    |  header
+                                li
+                                    span.glyphicon.glyphicon-text-height
+                                    |  text-height
+                                li
+                                    span.glyphicon.glyphicon-text-width
+                                    |  text-width
+                                br
+                                li
+                                    span.glyphicon.glyphicon-align-left
+                                    |  align-left
+                                li
+                                    span.glyphicon.glyphicon-align-center
+                                    |  align-center
+                                li
+                                    span.glyphicon.glyphicon-align-right
+                                    |  align-right
+                                li
+                                    span.glyphicon.glyphicon-align-justify
+                                    |  align-justify
+                                li
+                                    span.glyphicon.glyphicon-indent-left
+                                    |  indent-left
+                                li
+                                    span.glyphicon.glyphicon-indent-right
+                                    |  indent-right
+                                br
+                                li
+                                    span.glyphicon.glyphicon-list
+                                    |  list
+                                li
+                                    span.glyphicon.glyphicon-list-alt
+                                    |  list-alt
+                                li
+                                    span.glyphicon.glyphicon-th-list
+                                    |  th-list
+                                li
+                                    span.glyphicon.glyphicon-th-large
+                                    |  th-large
+                                li
+                                    span.glyphicon.glyphicon-th
+                                    |  th
+                                li
+                                    span.glyphicon.glyphicon-filter
+                                    |  filter
+                            h3 Sort
+                            ul.list-inline
+                                li
+                                    span.glyphicon.glyphicon-sort
+                                    |  sort
+                                li
+                                    span.glyphicon.glyphicon-sort-by-alphabet
+                                    |  sort-by-alphabet
+                                li
+                                    span.glyphicon.glyphicon-sort-by-alphabet-alt
+                                    |  sort-by-alphabet-alt
+                                li
+                                    span.glyphicon.glyphicon-sort-by-order
+                                    |  sort-by-order
+                                li
+                                    span.glyphicon.glyphicon-sort-by-order-alt
+                                    |  sort-by-order-alt
+                                li
+                                    span.glyphicon.glyphicon-sort-by-attributes
+                                    |  sort-by-attributes
+                                li
+                                    span.glyphicon.glyphicon-sort-by-attributes-alt
+                                    |  sort-by-attributes-alt
+                            h3 floppy disk
+                            ul.list-inline
+                                li
+                                    span.glyphicon.glyphicon-floppy-disk
+                                    |  floppy-disk
+                                li
+                                    span.glyphicon.glyphicon-floppy-saved
+                                    |  floppy-saved
+                                li
+                                    span.glyphicon.glyphicon-floppy-remove
+                                    |  floppy-remove
+                                li
+                                    span.glyphicon.glyphicon-floppy-save
+                                    |  floppy-save
+                                li
+                                    span.glyphicon.glyphicon-floppy-open
+                                    |  floppy-open
+                            h3 More functions
+                            ul.list-inline
+                                li
+                                    span.glyphicon.glyphicon-home
+                                    |  home
+                                li
+                                    span.glyphicon.glyphicon-dashboard
+                                    |  dashboard
+                                li
+                                    span.glyphicon.glyphicon-tasks
+                                    |  tasks
+                                li
+                                    span.glyphicon.glyphicon-stats
+                                    |  stats
+                                li
+                                    span.glyphicon.glyphicon-link
+                                    |  link
+                                li
+                                    span.glyphicon.glyphicon-comment
+                                    |  comment
+                                li
+                                    span.glyphicon.glyphicon-calendar
+                                    |  calendar
+                                li
+                                    span.glyphicon.glyphicon-time
+                                    |  time
+                                li
+                                    span.glyphicon.glyphicon-print
+                                    |  print
+                                br
+                                li
+                                    span.glyphicon.glyphicon-user
+                                    |  user
+                                li
+                                    span.glyphicon.glyphicon-certificate
+                                    |  certificate
+                                li
+                                    span.glyphicon.glyphicon-qrcode
+                                    |  qrcode
+                                li
+                                    span.glyphicon.glyphicon-barcode
+                                    |  barcode
+                            h3 Element symbols
+                            ul.list-inline
+                                li
+                                    span.glyphicon.glyphicon-globe
+                                    |  globe
+                                li
+                                    span.glyphicon.glyphicon-tower
+                                    |  tower
+                                li
+                                    span.glyphicon.glyphicon-road
+                                    |  road
+                                li
+                                    span.glyphicon.glyphicon-tree-conifer
+                                    |  tree-conifer
+                                li
+                                    span.glyphicon.glyphicon-tree-deciduous
+                                    |  tree-deciduous
+                                li
+                                    span.glyphicon.glyphicon-leaf
+                                    |  leaf
+                                br
+                                li
+                                    span.glyphicon.glyphicon-heart
+                                    |  heart
+                                li
+                                    span.glyphicon.glyphicon-heart-empty
+                                    |  heart-empty
+                                li
+                                    span.glyphicon.glyphicon-star
+                                    |  star
+                                li
+                                    span.glyphicon.glyphicon-star-empty
+                                    |  star-empty
+                                li
+                                    span.glyphicon.glyphicon-flash
+                                    |  flash
+                                li
+                                    span.glyphicon.glyphicon-fire
+                                    |  fire
+                            h3 Tools
+                            ul.list-inline
+                                li
+                                    span.glyphicon.glyphicon-search
+                                    |  search
+                                li
+                                    span.glyphicon.glyphicon-flag
+                                    |  flag
+                                li
+                                    span.glyphicon.glyphicon-pencil
+                                    |  pencil
+                                li
+                                    span.glyphicon.glyphicon-wrench
+                                    |  wrench
+                                li
+                                    span.glyphicon.glyphicon-cog
+                                    |  cog
+                                li
+                                    span.glyphicon.glyphicon-cutlery
+                                    |  cutlery
+                                br
+                                li
+                                    span.glyphicon.glyphicon-plane
+                                    |  plane
+                                li
+                                    span.glyphicon.glyphicon-trash
+                                    |  trash
+                                li
+                                    span.glyphicon.glyphicon-shopping-cart
+                                    |  shopping-cart
+                                li
+                                    span.glyphicon.glyphicon-briefcase
+                                    |  briefcase
+                                li
+                                    span.glyphicon.glyphicon-gift
+                                    |  gift
+                                li
+                                    span.glyphicon.glyphicon-glass
+                                    |  glass
+                                br
+                                li
+                                    span.glyphicon.glyphicon-phone-alt
+                                    |  phone-alt
+                                li
+                                    span.glyphicon.glyphicon-earphone
+                                    |  earphone
+                                li
+                                    span.glyphicon.glyphicon-phone
+                                    |  phone
+                                li
+                                    span.glyphicon.glyphicon-bullhorn
+                                    |  bullhorn
+                                li
+                                    span.glyphicon.glyphicon-bell
+                                    |  bell
+                                br
+                                li
+                                    span.glyphicon.glyphicon-hdd
+                                    |  hdd
+                                li
+                                    span.glyphicon.glyphicon-folder-close
+                                    |  folder-close
+                                li
+                                    span.glyphicon.glyphicon-folder-open
+                                    |  folder-open
+                                li
+                                    span.glyphicon.glyphicon-file
+                                    |  file
+                                li
+                                    span.glyphicon.glyphicon-tags
+                                    |  tags
+                                li
+                                    span.glyphicon.glyphicon-tag
+                                    |  tag
+                                li
+                                    span.glyphicon.glyphicon-book
+                                    |  book
+                                li
+                                    span.glyphicon.glyphicon-bookmark
+                                    |  bookmark
+                                br
+                                li
+                                    span.glyphicon.glyphicon-lock
+                                    |  lock
+                                li
+                                    span.glyphicon.glyphicon-compressed
+                                    |  compressed
+                                li
+                                    span.glyphicon.glyphicon-magnet
+                                    |  magnet
+                                li
+                                    span.glyphicon.glyphicon-paperclip
+                                    |  paperclip
+                                li
+                                    span.glyphicon.glyphicon-pushpin
+                                    |  pushpin
+                            h3 Signs
+                            ul.list-inline
+                                li
+                                    span.glyphicon.glyphicon-plus-sign
+                                    |  plus-sign
+                                li
+                                    span.glyphicon.glyphicon-minus-sign
+                                    |  minus-sign
+                                li
+                                    span.glyphicon.glyphicon-remove-sign
+                                    |  remove-sign
+                                li
+                                    span.glyphicon.glyphicon-ok-sign
+                                    |  ok-sign
+                                li
+                                    span.glyphicon.glyphicon-question-sign
+                                    |  question-sign
+                                li
+                                    span.glyphicon.glyphicon-info-sign
+                                    |  info-sign
+                                li
+                                    span.glyphicon.glyphicon-exclamation-sign
+                                    |  exclamation-sign
+                                li
+                                    span.glyphicon.glyphicon-warning-sign
+                                    |  warning-sign
+                            h3 Picture
+                            ul.list-inline
+                                li
+                                    span.glyphicon.glyphicon-picture
+                                    |  picture
+                                li
+                                    span.glyphicon.glyphicon-map-marker
+                                    |  map-marker
+                                li
+                                    span.glyphicon.glyphicon-adjust
+                                    |  adjust
+                                li
+                                    span.glyphicon.glyphicon-tint
+                                    |  tint
+                                li
+                                    span.glyphicon.glyphicon-move
+                                    |  move
+                                li
+                                    span.glyphicon.glyphicon-screenshot
+                                    |  screenshot
+                            h3 Video
+                            ul.list-inline
+                                li
+                                    span.glyphicon.glyphicon-film
+                                    |  film
+                                li
+                                    span.glyphicon.glyphicon-camera
+                                    |  camera
+                                li
+                                    span.glyphicon.glyphicon-facetime-video
+                                    |  facetime-video
+                                br
+                                li
+                                    span.glyphicon.glyphicon-sd-video
+                                    |  sd-video
+                                li
+                                    span.glyphicon.glyphicon-hd-video
+                                    |  hd-video
+                                li
+                                    span.glyphicon.glyphicon-subtitles
+                                    |  subtitles
+                            h3 Sound
+                            ul.list-inline
+                                li
+                                    span.glyphicon.glyphicon-music
+                                    |  music
+                                li
+                                    span.glyphicon.glyphicon-headphones
+                                    |  headphones
+                                br
+                                li
+                                    span.glyphicon.glyphicon-volume-off
+                                    |  volume-off
+                                li
+                                    span.glyphicon.glyphicon-volume-down
+                                    |  volume-down
+                                li
+                                    span.glyphicon.glyphicon-volume-up
+                                    |  volume-up
+                                br
+                                li
+                                    span.glyphicon.glyphicon-play-circle
+                                    |  play-circle
+                                li
+                                    span.glyphicon.glyphicon-repeat
+                                    |  repeat
+                                li
+                                    span.glyphicon.glyphicon-record
+                                    |  record
+                                li
+                                    span.glyphicon.glyphicon-off
+                                    |  off
+                                li
+                                    span.glyphicon.glyphicon-random
+                                    |  random
+                                li
+                                    span.glyphicon.glyphicon-refresh
+                                    |  refresh
+                            ul.list-inline
+                                li
+                                    span.glyphicon.glyphicon-sound-stereo
+                                    |  sound-stereo
+                                li
+                                    span.glyphicon.glyphicon-sound-dolby
+                                    |  sound-dolby
+                                li
+                                    span.glyphicon.glyphicon-sound-5-1
+                                    |  sound-5-1
+                                li
+                                    span.glyphicon.glyphicon-sound-6-1
+                                    |  sound-6-1
+                                li
+                                    span.glyphicon.glyphicon-sound-7-1
+                                    |  sound-7-1
+                            h3 Currency
+                            ul.list-inline
+                                li
+                                    span.glyphicon.glyphicon-credit-card
+                                    |  credit-card
+                                li
+                                    span.glyphicon.glyphicon-euro
+                                    |  euro
+                                li
+                                    span.glyphicon.glyphicon-usd
+                                    |  usd
+                                li
+                                    span.glyphicon.glyphicon-gbp
+                                    |  gbp
+
+                .section-divider
+                h2#tables Tables
+                p
+                    strong table.table
+                table.table
+                    thead
+                        tr
+                            th thead tr th
+                            th th
+                            th Header
+                            th Header
+                    tbody
+                        tr
+                            td tbody tr td
+                            td td
+                            td Data
+                            td Data
+                        tr
+                            td Data
+                            td Data
+                            td Data
+                            td Data
+                .row
+                    // Striped rows
+                    .col-sm-6
+                        p
+                            strong .table-striped
+                        table.table.table-striped
+                            thead
+                                tr
+                                    th Header
+                                    th Header
+                            tbody
+                                tr
+                                    td Data
+                                    td Data
+                                tr
+                                    td Data
+                                    td Data
+                    // Bordered table
+                    .col-sm-6
+                        p
+                            strong .table-bordered
+                        table.table.table-bordered
+                            thead
+                                tr
+                                    th Header
+                                    th Header
+                            tbody
+                                tr
+                                    td Data
+                                    td Data
+                                tr
+                                    td Data
+                                    td Data
+                .row
+                    // Hover rows
+                    .col-sm-6
+                        p
+                            strong .table-hover
+                        table.table.table-hover
+                            thead
+                                tr
+                                    th Header
+                                    th Header
+                            tbody
+                                tr
+                                    td Data
+                                    td Data
+                                tr
+                                    td Data
+                                    td Data
+                    // Condensed table
+                    .col-sm-6
+                        p
+                            strong .table-condensed
+                        table.table.table-condensed
+                            thead
+                                tr
+                                    th Header
+                                    th Header
+                            tbody
+                                tr
+                                    td Data
+                                    td Data
+                                tr
+                                    td Data
+                                    td Data
+                // Responsive tables and Contextual classes
+                p
+                    strong div.table-responsive table.table
+                .table-responsive
+                    table.table
+                        thead
+                            tr
+                                th Header
+                                th Header
+                                th Header
+                                th Header
+                                th Header
+                        tbody
+                            tr
+                                td.active td.active
+                                td.success td.success
+                                td.info td.info
+                                td.warning td.warning
+                                td.danger td.danger
+                            tr.active
+                                td tr.active td
+                                td(colspan='4')
+                                    | Applies the hover color to a particular row or cell
+                            tr.success
+                                td tr.success td
+                                td(colspan='4')
+                                    | Indicates a successful or positive action
+                            tr.info
+                                td tr.info td
+                                td(colspan='4')
+                                    | Indicates a neutral informative change or action
+                            tr.warning
+                                td tr.warning td
+                                td(colspan='4')
+                                    | Indicates a warning that might need attention
+                            tr.danger
+                                td tr.danger td
+                                td(colspan='4')
+                                    | Indicates a dangerous or potentially negative action
+                .section-divider
+                h2#forms Forms
+                // Basic example
+                p
+                    strong form
+                form
+                    // Inputs with different sizes
+                    .form-group
+                        label.control-label label.control-label
+                        input.form-control(type='text', placeholder='input.form-control')
+                    .form-group
+                        label.control-label label.control-label
+                        input.form-control.input-lg(type='text', placeholder='.input-lg')
+                    .form-group
+                        label.control-label label.control-label
+                        input.form-control.input-sm(type='text', placeholder='.input-sm')
+                    // Textarea
+                    .form-group
+                        label.control-label label.control-label
+                        textarea.form-control(rows='3') textarea.form-control
+                    // File input
+                    .form-group
+                        label(for='example-file-input') input[type="file"]
+                        input#example-file-input(type='file')
+                        span.help-block
+                            | .help-block: Wrap labels and controls in
+                            code .form-group
+                            | for optimum spacing.
+                    // Button
+                    .form-group
+                        button.btn.btn-default(type='submit') Submit
+                // Inline form
+                p
+                    strong form.form-inline
+                form.form-inline
+                    .form-group
+                        input#example-text-input-inline.form-control(type='text', placeholder='input.form-control')
+                    | &nbsp;&nbsp;
+                    button.btn.btn-default(type='submit') Submit
+                br
+                // Horizontal form
+                p
+                    strong form.form-horizontal
+                form.form-horizontal
+                    .form-group
+                        label.col-sm-3.control-label(for='example-text-input-horizontal')
+                            | label.control-label
+                        .col-sm-9
+                            input#example-text-input-horizontal.form-control(type='text', placeholder='input.form-control')
+                    .form-group.form-group-lg
+                        label.col-sm-3.control-label(for='example-text-input-horizontal-lg')
+                            | label.control-label
+                        .col-sm-9
+                            input#example-text-input-horizontal-lg.form-control(type='text', placeholder='.form-group-lg input.form-control')
+                    .form-group.form-group-sm
+                        label.col-sm-3.control-label(for='example-text-input-horizontal-sm')
+                            | label.control-label
+                        .col-sm-9
+                            input#example-text-input-horizontal-sm.form-control(type='text', placeholder='.form-group-sm input.form-control')
+                    // Checkbox
+                    .form-group
+                        label.col-sm-3.control-label .checkbox
+                        .col-sm-9
+                            .checkbox.checkbox-primary
+                                input#checkbox2(type='checkbox', checked='')
+                                label(for='checkbox2') .checkbox.checkbox-primary
+                            .checkbox.checkbox-info
+                                input#checkbox4(type='checkbox')
+                                label(for='checkbox4') .checkbox.checkbox-info
+                            .checkbox.checkbox-warning
+                                input#checkbox5(type='checkbox', checked='')
+                                label(for='checkbox5') .checkbox.checkbox-warning
+                            .checkbox.checkbox-danger
+                                input#checkbox6(type='checkbox', checked='')
+                                label(for='checkbox6') .checkbox.checkbox-danger
+                            .checkbox
+                                input#checkbox1(type='checkbox')
+                                label(for='checkbox1') .checkbox
+                            hr
+                        label.col-sm-3.control-label .checkbox.checkbox-inline
+                        .col-sm-9
+                            .checkbox.checkbox-inline.checkbox-primary
+                                input#inlineCheckbox1(type='checkbox', value='option1')
+                                label(for='inlineCheckbox1')  .checkbox.checkbox-inline
+                            .checkbox.checkbox-danger.checkbox-inline
+                                input#inlineCheckbox2(type='checkbox', value='option1', checked='')
+                                label(for='inlineCheckbox2')  .checkbox.checkbox-danger.checkbox-inline
+                            hr
+
+                    // Radio
+                    .form-group
+                        label.col-sm-3.control-label .radio
+                        .col-sm-9
+                            .radio.radio-primary
+                                input#radio1(type='radio', name='radio1', value='option1', checked='')
+                                label(for='radio1') .radio.radio-primary
+                            .radio.radio-info
+                                input#radio2(type='radio', name='radio1', value='option2')
+                                label(for='radio2') .radio.radio-info
+                            .radio.radio-warning
+                                input#radio4(type='radio', name='radio1', value='option4')
+                                label(for='radio4') .radio.radio-warning
+                            .radio.radio-danger
+                                input#radio5(type='radio', name='radio1', value='option5')
+                                label(for='radio5') .radio.radio-danger
+                            .radio
+                                input#radio6(type='radio', name='radio1', value='option6')
+                                label(for='radio6') .radio
+                            hr
+
+                        label.col-sm-3.control-label .radio.radio-inline
+                        .col-sm-9
+                            .radio.radio-inline.radio-primary
+                                input#inlineRadio1(type='radio', value='option1', name='radioInline', checked='')
+                                label(for='inlineRadio1')  .radio.radio-inline.radio-primary
+                            .radio.radio-inline.radio-info
+                                input#inlineRadio2(type='radio', value='option1', name='radioInline')
+                                label(for='inlineRadio2') .radio.radio-inline.radio-info
+                            hr
+
+                        label.col-sm-3.control-label Disabled Radios
+                        .col-sm-9
+                            .radio.radio-danger
+                                input#dradio5(type='radio', name='dradio3', value='option1', disabled='')
+                                label(for='dradio5')
+                                  | Next
+                            .radio
+                                input#dradio6(type='radio', name='dradio3', value='option2', checked='', disabled='')
+                                label(for='dradio6')
+                                  | One
+
+                    .form-group
+                        .col-md-12
+                            .row
+                                .col-sm-12
+                                        hr
+                                        h3 Bootstrap select &nbsp;&nbsp;&nbsp;
+                            .row
+                                .col-sm-3
+                                .col-sm-9
+                                        p Uses the bootstrap select plugin at #[a(href="http://silviomoreto.github.io/bootstrap-select/") http://silviomoreto.github.io/bootstrap-select/]
+                                        a.btn.btn-primary.btn-xs(href="http://silviomoreto.github.io/bootstrap-select/examples/" target="_blank") See a full set of select examples
+                                        br
+                                        br
+
+                                label.col-sm-3.control-label .selectpicker
+                                .col-sm-4
+                                    select.form-control.selectpicker
+                                        option Option
+                                        option Option #2
+                                        option Option #3
+                                        option Option #4
+                                        option Option #5
+                                        option Option #6
+                            br
+                            .row
+                                label.col-sm-3.control-label .selectpicker(multiple)
+                                .col-sm-4
+                                    select.form-control.selectpicker(multiple, title="Choose one or more...")
+                                        option Multiple select
+                                        option multiple #2
+                                        option multple #3
+                                        option multple #4
+                                        option multple #5
+                                        option multple #6
+                            br
+                            .row
+                                label.col-sm-3.control-label .selectpicker(data-live-search="true")
+                                .col-sm-4
+                                    h4 live search (typeahead)
+                                    select.form-control.selectpicker(data-live-search="true", data-size="10")
+                                        option Alfred
+                                        option Beer
+                                        option Charlie
+                                        option Dog
+                                        option Edward
+                                        option Freddy
+                                        option George
+                                        option Harry
+                                        option In
+                                        option Johnny
+                                        option King
+                                        option Love
+                                        option Mother
+                                        option Nuts
+                                        option Orange
+                                        option Peter
+                                        option Queen
+                                        option Roger/Robert
+                                        option Sugar
+                                        option Tommy
+                                        option Uncle
+                                        option Victor
+                                        option William
+                                        option X-ray
+                                        option Yorker
+                                        option Zulu
+                    .form-group
+                        .col-sm-12
+                            hr
+                            h3 Bog standard native drop down
+                        label.col-sm-3.control-label select.form-control
+                        .col-sm-4
+                            select.form-control
+                                option option
+                                option Option #2
+                                option Option #3
+                            br
+                            select.form-control(disabled='')
+                                option select[disabled]
+
+
+                    // Static control
+                    .form-group
+                        hr
+                        label.col-sm-3.control-label Static control
+                        .col-sm-9
+                            p.form-control-static p.form-control-static
+                    // Disabled input
+                    .form-group
+                        label.col-sm-3.control-label Disabled input
+                        .col-sm-9
+                            input.form-control(type='text', placeholder='input.form-control[disabled]', disabled='')
+                    // Button
+                    .form-group
+                        .col-sm-offset-3.col-sm-9
+                            button.btn.btn-default(type='submit') Submit
+                // Validation states
+                hr
+                p
+                    strong Validation styles on form controls
+                form.form-horizontal
+                    // Success state
+                    .form-group.has-success
+                        label.col-sm-3.control-label(for='input-success')
+                            | .has-success
+                        .col-sm-9
+                            input#input-success.form-control(type='text', placeholder='input.form-control')
+                    .form-group.has-success.has-feedback
+                        label.col-sm-3.control-label(for='input-success-2')
+                            | .has-feedback
+                        .col-sm-9
+                            input#input-success-2.form-control(type='text', placeholder='.form-control-feedback')
+                            span.glyphicon.glyphicon-ok.form-control-feedback
+                    // Warning state
+                    .form-group.has-warning
+                        label.col-sm-3.control-label(for='input-warning')
+                            | .has-warning
+                        .col-sm-9
+                            input#input-warning.form-control(type='text', placeholder='input.form-control')
+                    .form-group.has-warning.has-feedback
+                        label.col-sm-3.control-label(for='input-warning-2')
+                            | .has-feedback
+                        .col-sm-9
+                            input#input-warning-2.form-control(type='text', placeholder='.form-control-feedback')
+                            span.glyphicon.glyphicon-warning-sign.form-control-feedback
+                    // Error state
+                    .form-group.has-error
+                        label.col-sm-3.control-label(for='input-error')
+                            | .has-error
+                        .col-sm-9
+                            input#input-error.form-control(type='text', placeholder='input.form-control')
+                    .form-group.has-error.has-feedback
+                        label.col-sm-3.control-label(for='input-error-2')
+                            | .has-feedback
+                        .col-sm-9
+                            input#input-error-2.form-control(type='text', placeholder='.form-control-feedback')
+                            span.glyphicon.glyphicon-remove.form-control-feedback
+                .section-divider
+                h2#buttons Buttons
+                // Styled buttons
+                p.bse-buttons
+                    button.btn.btn-default(type='button') button.btn.btn-default
+                    | &nbsp;
+                    button.btn.btn-primary(type='button') .btn-primary
+                    | &nbsp;
+                    button.btn.btn-success(type='button') .btn-success
+                    | &nbsp;
+                    button.btn.btn-info(type='button') .btn-info
+                    | &nbsp;
+                    button.btn.btn-warning(type='button') .btn-warning
+                    | &nbsp;
+                    button.btn.btn-danger(type='button') .btn-danger
+                    | &nbsp;
+                    button.btn.btn-link(type='button') .btn-link
+                // Button sizes
+                p.bse-buttons
+                    button.btn.btn-default.btn-lg(type='button') .btn-lg
+                    | &nbsp;
+                    button.btn.btn-default(type='button') Default button size
+                    | &nbsp;
+                    button.btn.btn-default.btn-sm(type='button') .btn-sm
+                    | &nbsp;
+                    button.btn.btn-default.btn-xs(type='button') .btn-xs
+                // Block level buttons
+                p
+                    button.btn.btn-primary.btn-block(type='button') .btn-block
+                    button.btn.btn-default.btn-block(type='button') .btn-block
+                // Button tags
+                p.bse-buttons
+                    a.btn.btn-default(href='#') a
+                    | &nbsp;
+                    button.btn.btn-default(type='button') button
+                    | &nbsp;
+                    input.btn.btn-default(type='button', value='input[type="button"]')
+                    | &nbsp;
+                    input.btn.btn-default(type='submit', value='input[type="submit"]')
+                p.bse-buttons
+                    // Active state
+                    a.btn.btn-default.active(href='#') a.active
+                    | &nbsp;
+                    button.btn.btn-default.active(type='button') button.active
+                    | &nbsp;
+                    // Disabled state
+                    a.btn.btn-default.disabled(href='#') a.disabled
+                    | &nbsp;
+                    button.btn.btn-default(type='button', disabled='disabled') button[disabled]
+                .section-divider
+                h2#images Images
+                .row.bs-thumbnails
+                    .col-sm-3.col-xs-6
+                        p
+                            strong .img-rounded
+                        img.img-rounded(src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+', alt='.img-rounded')
+                    .col-sm-3.col-xs-6
+                        p
+                            strong .img-circle
+                        img.img-circle(src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+', alt='.img-circle')
+                    .col-sm-3.col-xs-6
+                        p
+                            strong .img-thumbnail
+                        img.img-thumbnail(src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+', alt='.img-thumbnail')
+                    .col-sm-3.col-xs-6
+                        p
+                            strong .img-responsive
+                        img.img-responsive(src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+', alt='.img-responsive')
+
+                .section-divider
+                h2#helper-classes Helper classes
+                // Contextual colors
+                p
+                    span.text-muted .text-muted
+                    | &nbsp;
+                    span.text-primary .text-primary
+                    | &nbsp;
+                    span.text-success .text-success
+                    | &nbsp;
+                    span.text-info .text-info
+                    | &nbsp;
+                    span.text-warning .text-warning
+                    | &nbsp;
+                    span.text-danger .text-danger
+                // Contextual backgrounds
+                p
+                    span.bg-primary .bg-primary
+                    | &nbsp;
+                    span.bg-success .bg-success
+                    | &nbsp;
+                    span.bg-info .bg-info
+                    | &nbsp;
+                    span.bg-warning .bg-warning
+                    | &nbsp;
+                    span.bg-danger .bg-danger
+                // Close icon
+                p
+                    | button.close →
+                    button.close(type='button') &times;
+                // Carets
+                p
+                    | .caret
+                    span.caret
+                // Clearfix and floats
+                .js-html-inspector(data-remove-target='p:first')
+                    p
+                        strong .clearfix
+                    .clearfix
+                        .pull-left .pull-left
+                        .pull-right .pull-right
+                br
+                p
+                    // Center content blocks
+                    code .center-block
+                    | : Set an element to
+                    code display: block
+                    | and center via
+                    code margin
+                    | .
+                    br
+                p
+                    // Showing and hiding content
+                    code .show
+                    | and
+                    code .hidden
+                    | : Showing and hiding content.
+                    br
+                    code .invisible
+                    | : Toggle only the visibility of an element.
+                    br
+                p
+                    // Screen reader content
+                    code .sr-only
+                    | : Hide an element to all devices
+                    b except screen readers
+                    | .
+                    br
+                p
+                    // Image replacement
+                    code .text-hide
+                    | : Replace an element's text content with a background image.
+
+                .section-divider
+                h1#components.page-header Components
+                h2#dropdowns Dropdowns
+                .clearfix.js-html-inspector(data-remove-target='p:first')
+                    p
+                        strong .dropdown ul.dropdown-menu
+                    .dropdown
+                        // Only use inline style for static display
+                        ul.dropdown-menu(style='display: block; position: static;')
+                            li.dropdown-header li.dropdown-header
+                            li
+                                a(href='#') li a
+                            li
+                                a(href='#') Another link
+                            li.disabled
+                                a(href='#') li.disabled a
+                            li.divider
+                            li.dropdown-header Dropdown header
+                            li
+                                a(href='#') Separated link
+                .section-divider
+                h2#button-groups Button groups
+                .js-html-inspector(data-remove-target='p:first')
+                    p
+                        strong .btn-group
+                    .btn-group
+                        button.btn.btn-default(type='button') #1
+                        button.btn.btn-default(type='button') #2
+                        button.btn.btn-default(type='button') #3
+                br
+                .js-html-inspector(data-remove-target='p:first', data-remove-class-target='div.bse-buttons')
+                    p
+                        strong .btn-toolbar .btn-group
+                    .btn-toolbar.bse-buttons
+                        // Large button group
+                        .btn-group.btn-group-lg
+                            button.btn.btn-default(type='button') .btn-group-lg #1
+                            button.btn.btn-default(type='button') #2
+                            button.btn.btn-default(type='button') #3
+                        | &nbsp;
+                        // Small button group
+                        .btn-group.btn-group-sm
+                            button.btn.btn-default(type='button') .btn-group-sm #1
+                            button.btn.btn-default(type='button') #2
+                            button.btn.btn-default(type='button') #3
+                        | &nbsp;
+                        // Extra small button group
+                        .btn-group.btn-group-xs
+                            button.btn.btn-default(type='button') .btn-group-xs #1
+                            button.btn.btn-default(type='button') #2
+                            button.btn.btn-default(type='button') #3
+                br
+                .btn-toolbar.bse-buttons
+                    // Button group with dropdown
+                    .btn-group
+                        button.btn.btn-default(type='button') #1
+                        button.btn.btn-default(type='button') #2
+                        .btn-group
+                            button.btn.btn-default.dropdown-toggle(data-toggle='dropdown', type='button')
+                                | button.dropdown-toggle
+                                span.caret
+                            ul.dropdown-menu
+                                li
+                                    a(href='#') Link #1
+                                li
+                                    a(href='#') Link #2
+                    // Only .btn-group has left padding inside .btn-toolbar
+                    // Vertical button group with dropdown
+                    | &nbsp;
+                    .btn-group-vertical
+                        button.btn.btn-default(type='button') .btn-group-vertical button
+                        .btn-group
+                            button.btn.btn-default.dropdown-toggle(data-toggle='dropdown', type='button')
+                                | Dropdown
+                                span.caret
+                            ul.dropdown-menu
+                                li
+                                    a(href='#') Link #1
+                                li
+                                    a(href='#') Link #2
+                        button.btn.btn-default(type='button') #3
+                br
+                .js-html-inspector(data-remove-target='p:first')
+                    p
+                        strong .btn-group.btn-group-justified
+                    .btn-group.btn-group-justified
+                        a.btn.btn-default(href='#') #1
+                        a.btn.btn-default(href='#') #2
+                        a.btn.btn-default(href='#') #3
+                br
+                .js-html-inspector(data-remove-target='p:first', data-remove-class-target='div.bse-buttons')
+                    p
+                        strong .btn-group.dropup
+                    // Split button dropup
+                    .btn-group.dropup.bse-buttons
+                        button.btn.btn-default(type='button') .dropdown-menu →
+                        button.btn.btn-default.dropdown-toggle(data-toggle='dropdown', type='button')
+                            span.caret
+                        ul.dropdown-menu
+                            li
+                                a(href='#') Link #1
+                            li
+                                a(href='#') Link #2
+                    // Split button right dropup
+                    | &nbsp;
+                    .btn-group.dropup
+                        button.btn.btn-default(type='button') .dropdown-menu-right →
+                        button.btn.btn-default.dropdown-toggle(data-toggle='dropdown', type='button')
+                            span.caret
+                        ul.dropdown-menu.dropdown-menu-right
+                            li
+                                a(href='#') Link #1
+                            li
+                                a(href='#') Link #2
+                .section-divider
+                h2#input-groups Input groups
+                .js-html-inspector(data-remove-target='p:first')
+                    p
+                        strong .input-group
+                    .form-group
+                        .input-group
+                            span.input-group-addon .input-group-addon
+                            input.form-control(type='text', placeholder='input.form-control')
+                            div.input-group-addon.checkbox.checkbox-inline.checkbox-primary
+                                input(type='checkbox', id="xxx")
+                                label(for="xxx")
+                            div.input-group-addon.radio.radio-primary.radio-inline
+                                input(type='radio', id="addonRadio")
+                                label(for="addonRadio")
+                    .form-group
+                        .input-group
+                            input.form-control(type='text', placeholder='input.form-control')
+                            span.input-group-btn
+                                button.btn.btn-default(type='button')
+                                    | .input-group-btn button
+                .js-html-inspector(data-remove-target='p:first')
+                    p
+                        strong .input-group-lg
+                    .form-group
+                        .input-group.input-group-lg
+                            span.input-group-addon Addon
+                            input.form-control.input-lg(type='text', placeholder='.input-lg')
+                            span.input-group-addon Addon
+                .js-html-inspector(data-remove-target='p:first')
+                    p
+                        strong .input-group-sm
+                    .form-group
+                        .input-group.input-group-sm
+                            span.input-group-addon Addon
+                            input.form-control.input-sm(type='text', placeholder='.input-sm')
+                            span.input-group-addon Addon
+                .section-divider
+                h2#navs Navs
+                .js-html-inspector(data-remove-target='p:first')
+                    p
+                        strong ul.nav.nav-tabs
+                    ul.nav.nav-tabs
+                        li.active
+                            a(href='#') li.active a
+                        li.disabled
+                            a(href='#') li.disabled a
+                        li.dropdown
+                            a.dropdown-toggle(data-toggle='dropdown', href='#')
+                                | li.dropdown
+                                span.caret
+                            ul.dropdown-menu.dropdown-menu-right
+                                li
+                                    a(href='#') Link #1
+                                li
+                                    a(href='#') Link #2
+                .js-html-inspector(data-remove-target='["p:first","br"]')
+                    br
+                    p
+                        strong ul.nav.nav-pills
+                    ul.nav.nav-pills
+                        li.active
+                            a(href='#') li.active a
+                        li.disabled
+                            a(href='#') li.disabled a
+                        li.dropdown
+                            a.dropdown-toggle(data-toggle='dropdown', href='#')
+                                | li.dropdown
+                                span.caret
+                            ul.dropdown-menu.dropdown-menu-right
+                                li
+                                    a(href='#') Link #1
+                                li
+                                    a(href='#') Link #2
+                .js-html-inspector(data-remove-target='["p:first","br"]')
+                    br
+                    p
+                        strong ul.nav.nav-pills.nav-stacked
+                    ul.nav.nav-pills.nav-stacked
+                        li.active
+                            a(href='#')
+                                | li.active a
+                                span.badge.pull-right .badge.pull-right
+                        li.disabled
+                            a(href='#') li.disabled a
+                        li.dropdown
+                            a.dropdown-toggle(data-toggle='dropdown', href='#')
+                                | li.dropdown
+                                span.caret
+                            ul.dropdown-menu
+                                li
+                                    a(href='#') Link #1
+                                li
+                                    a(href='#') Link #2
+                .js-html-inspector(data-remove-target='["p:first","br"]')
+                    br
+                    p
+                        strong ul.nav.nav-tabs.nav-justified
+                    ul.nav.nav-tabs.nav-justified
+                        li.active
+                            a(href='#')
+                                | li.active a
+                                span.badge .badge
+                        li
+                            a(href='#') Link #2
+                        li
+                            a(href='#') Link #3
+                .js-html-inspector(data-remove-target='["p:first","br"]')
+                    br
+                    p
+                        strong ul.nav.nav-pills.nav-justified
+                    ul.nav.nav-pills.nav-justified
+                        li.active
+                            a(href='#')
+                                | li.active a
+                                span.badge .badge
+                        li
+                            a(href='#') Link #2
+                        li
+                            a(href='#') Link #3
+                .section-divider
+                h2#navbar Navbar
+                .js-html-inspector(data-remove-target='p:first')
+                    p
+                        strong .navbar.navbar-default .container-fluid
+                    nav.navbar.navbar-default
+                        .container-fluid
+                            // Brand and toggle get grouped for better mobile display
+                            ul.nav.navbar-nav
+                                li.active
+                                    a(href='#') li.active a
+                                li
+                                    a(href='#') Link #2
+
+                .js-html-inspector(data-remove-target='p:first')
+                    p
+                        strong .navbar.navbar-inverse .container-fluid &nbsp;
+                    p Add the .navbar-btn class to button elements not residing in a form to vertically center them in the navbar.
+                    nav.navbar.navbar-inverse
+                        .container-fluid
+                            ul.nav.navbar-nav
+                                li.active
+                                    a(href='#') li.active a
+                                li
+                                    a(href='#') Link #2
+                                li
+                                    a(href='#') Link #3
+                                li
+                                    a(href='#') Link #4
+                            button.btn.btn-primary.navbar-btn.btn-sm.pull-right(type='button') .btn-sm
+                .js-html-inspector(data-remove-target='p:first')
+                    p
+                        | Complex navbar with
+                        code navbar-left
+                        | ,
+                        code navbar-right
+                        | and
+                        code navbar-collapse
+                        | .
+                    nav.navbar.navbar-default
+                        .container-fluid
+                            .navbar-header
+                                button.navbar-toggle(data-toggle='collapse', data-target='#navbar-collapse-2', type='button')
+                                    span.icon-bar
+                                    span.icon-bar
+                                    span.icon-bar
+                            #navbar-collapse-2.collapse.navbar-collapse
+                                ul.nav.navbar-nav
+                                    li.dropdown
+                                        a.dropdown-toggle(data-toggle='dropdown', href='#')
+                                            | Dropdown
+                                            b.caret
+                                        ul.dropdown-menu
+                                            li
+                                                a(href='#') Link #1
+                                            li
+                                                a(href='#') Link #2
+                                form.navbar-form.navbar-left
+                                    .form-group
+                                        input.form-control.input-sm(type='text', placeholder='.navbar-form.navbar-left')
+                                    | &nbsp;
+                                    button.btn.btn-primary.btn-sm(type='submit') Submit
+                                ul.nav.navbar-nav.navbar-right
+                                    li.dropdown
+                                        a.dropdown-toggle(data-toggle='dropdown', href='#')
+                                            | .navbar-right Dropdown
+                                            b.caret
+                                        ul.dropdown-menu
+                                            li
+                                                a(href='#') Link #1
+                                            li
+                                                a(href='#') Link #2
+                            // /.navbar-collapse
+                .section-divider
+                h2#breadcrumbs Breadcrumbs
+                .js-html-inspector(data-remove-target='p:first')
+                    p
+                        strong ol.breadcrumb
+                    ol.breadcrumb
+                        li
+                            a(href='#') li a
+                        li
+                            a(href='#') Link #2
+                        li.active li.active
+                .section-divider
+                h2#pagination Pagination
+                .js-html-inspector(data-remove-target='div:first')
+                    div
+                        strong ul.pagination
+                    ul.pagination
+                        li
+                            a(href='#') &laquo;
+                        li
+                            a(href='#') li a
+                        li.active
+                            a(href='#') li.active a
+                        li.disabled
+                            a(href='#') li.disabled a
+                        li
+                            a(href='#') &raquo;
+                .js-html-inspector(data-remove-target='div:first')
+                    div
+                        strong ul.pagination.pagination-lg
+                    ul.pagination.pagination-lg
+                        li
+                            a(href='#') &laquo;
+                        li
+                            a(href='#') #1
+                        li.active
+                            a(href='#') #2
+                        li
+                            a(href='#') #3
+                        li
+                            a(href='#') &raquo;
+                .js-html-inspector(data-remove-target='div:first')
+                    div
+                        strong ul.pagination.pagination-sm
+                    ul.pagination.pagination-sm
+                        li
+                            a(href='#') &laquo;
+                        li
+                            a(href='#') #1
+                        li.active
+                            a(href='#') #2
+                        li
+                            a(href='#') #3
+                        li
+                            a(href='#') &raquo;
+
+                .section-divider
+                h2#labels Labels
+                p
+                    span.label.label-default .label.label-default
+                    span.label.label-success .label.label-success
+                    span.label.label-info .label.label-info
+                    span.label.label-warning .label.label-warning
+                    span.label.label-danger .label.label-danger
+                p
+                    span.label.label-sml.label-default .label.label-sml.label-default
+                    span.label.label-sml.label-success .label.label-sml.label-success
+                    span.label.label-sml.label-info .label.label-sml.label-info
+                    span.label.label-sml.label-warning .label.label-sml.label-warning
+                    span.label.label-sml.label-danger .label.label-sml.label-danger
+                h2#badges Badges
+                p
+                    span.badge.badge-default .badge.badge-default
+                    span.badge.badge-success .badge.badge-success
+                    span.badge.badge-info .badge.badge-info
+                    span.badge.badge-warning .badge.badge-warning
+                    span.badge.badge-danger .badge.badge-danger
+                p
+                    span.badge.badge-sml.badge-default .badge.badge-sml.badge-default
+                    span.badge.badge-sml.badge-success .badge.badge-sml.badge-success
+                    span.badge.badge-sml.badge-info .badge.badge-sml.badge-info
+                    span.badge.badge-sml.badge-warning .badge.badge-sml.badge-warning
+                    span.badge.badge-sml.badge-danger .badge.badge-sml.badge-danger
+
+                .section-divider
+                h2#jumbotron Jumbotron
+                .js-html-inspector(data-remove-target='p:first')
+                    p
+                        strong .jumbotron
+                    .jumbotron
+                        h1 Heading
+                        p Paragraph
+                        p
+                            a.btn.btn-primary Button
+                .section-divider
+                h2#thumbnails Thumbnails
+                .row
+                    .col-sm-3.col-xs-6
+                        p
+                            strong .thumbnail
+                        .thumbnail
+                            img(style='width: 100%', src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+', alt='thumbnail')
+                            .caption
+                                h3 .caption h3
+                                p Paragraph
+                                p
+                                    a.btn.btn-primary.btn-block.btn-sm(href='#') Button
+                    .col-sm-3.col-xs-6
+                        p
+                            strong .thumbnail
+                        .thumbnail
+                            img(style='width: 100%', src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+', alt='thumbnail')
+                            .caption
+                                h3 Caption
+                                p Paragraph
+                                p
+                                    a.btn.btn-primary.btn-block.btn-sm(href='#') Button
+                    .col-sm-3.col-xs-6
+                        p
+                            strong .thumbnail
+                        .thumbnail
+                            img(style='width: 100%', src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+', alt='thumbnail')
+                            .caption
+                                h3 Caption
+                                p Paragraph
+                                p
+                                    a.btn.btn-primary.btn-block.btn-sm(href='#') Button
+                    .col-sm-3.col-xs-6
+                        p
+                            strong .thumbnail
+                        .thumbnail
+                            img(style='width: 100%', src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+', alt='thumbnail')
+                            .caption
+                                h3 Caption
+                                p Paragraph
+                                p
+                                    a.btn.btn-primary.btn-block.btn-sm(href='#') Button
+                .section-divider
+                h2#alerts Alerts
+                // Alerts
+                .js-html-inspector
+                    // The misspelled .alert-dismissable was deprecated in 3.2.0.
+                    .alert.alert-dismissible
+                        button.close(data-dismiss='alert', type='button') &times;
+                        | .alert.alert-dismissible
+                .row
+                    .col-sm-6
+                        .alert.alert-success
+                            button.close(data-dismiss='alert', type='button') &times;
+                            | .alert.alert-success&nbsp;
+                            a.alert-link(href='#') a.alert-link
+
+                    .col-sm-6
+                        .alert.alert-info
+                            button.close(data-dismiss='alert', type='button') &times;
+                            | .alert.alert-info&nbsp;
+                            a.alert-link(href='#') a.alert-link
+
+                    .col-sm-6
+                        .alert.alert-warning
+                            button.close(data-dismiss='alert', type='button') &times;
+                            | .alert.alert-warning&nbsp;
+                            a.alert-link(href='#') a.alert-link
+
+                    .col-sm-6
+                        .alert.alert-danger
+                            button.close(data-dismiss='alert', type='button') &times;
+                            | .alert.alert-danger&nbsp;
+                            a.alert-link(href='#') a.alert-link
+
+                .section-divider
+                h2#progress-bars Progress bars
+                .js-html-inspector(data-remove-target='p:first')
+                    p
+                        strong .progress
+                    .progress
+                        .progress-bar(style='width: 80%;')
+                            span .progress-bar
+                    .progress
+                        .progress-bar.progress-bar-success(style='width: 80%;')
+                            span .progress-bar.progress-bar-success
+                    .progress
+                        .progress-bar.progress-bar-info(style='width: 80%;')
+                            span .progress-bar.progress-bar-info
+                    .progress
+                        .progress-bar.progress-bar-warning(style='width: 80%;')
+                            span .progress-bar.progress-bar-warning
+                    .progress
+                        .progress-bar.progress-bar-danger(style='width: 80%;')
+                            span .progress-bar.progress-bar-danger
+
+                    p
+                        strong Optio bars
+                    .progress
+                        .progress-bar.progress-bar-optio(style='width: 80%;')
+                            span .progress-bar.progress-bar-optio
+                    .progress
+                        .progress-bar.progress-bar-optio-simplicity(style='width: 60%;')
+                            span .progress-bar.progress-bar-optio-simplicity
+                    .progress
+                        .progress-bar.progress-bar-optio-features(style='width: 40%;')
+                            span .progress-bar.progress-bar-optio-features
+                    .progress
+                        .progress-bar.progress-bar-optio-sentiment(style='width: 75%;')
+                            span .progress-bar.progress-bar-optio-sentiment
+
+
+                .js-html-inspector(data-remove-target='p:first')
+                    p
+                        strong .progress .progress-bar.progress-bar-striped
+                    .progress
+                        .progress-bar.progress-bar-striped(style='width: 17%;')
+                        .progress-bar.progress-bar-striped.progress-bar-success(style='width: 17%;')
+                        .progress-bar.progress-bar-striped.progress-bar-info(style='width: 17%;')
+                        .progress-bar.progress-bar-striped.progress-bar-warning(style='width: 17%;')
+                        .progress-bar.progress-bar-striped.progress-bar-danger(style='width: 17%;')
+                .js-html-inspector(data-remove-target='p:first')
+                    p
+                        strong .progress.active .progress-bar.progress-bar-striped
+                    .progress.active
+                        .progress-bar.progress-bar-striped(style='width: 17%;')
+                        .progress-bar.progress-bar-striped.progress-bar-success(style='width: 17%;')
+                        .progress-bar.progress-bar-striped.progress-bar-info(style='width: 17%;')
+                        .progress-bar.progress-bar-striped.progress-bar-warning(style='width: 17%;')
+                        .progress-bar.progress-bar-striped.progress-bar-danger(style='width: 17%;')
+                .section-divider
+                h2#media-object Media object
+                .js-html-inspector(data-remove-target='strong:first')
+                    strong .media
+                    .media
+                        a.media-left(href='#')
+                            img.media-object(src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+', alt='.media-object')
+                        .media-body
+                            h4.media-heading .media-body h4.media-heading
+                            | ← a.media-left img.media-object
+                br
+                .js-html-inspector(data-remove-target='p:first')
+                    strong .media
+                    .media
+                        a.media-left.media-middle(href='#')
+                            img.media-object(src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+', alt='.media-object')
+                        .media-body
+                            h4.media-heading .media-body h4.media-heading
+                            | ← a.media-left.
+                            u media-middle
+                            | img.media-object
+                            .media
+                                a.media-left(href='#')
+                                    img.media-object(src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+', alt='.media-object')
+                                .media-body
+                                    h4.media-heading .media .media-body h4.media-heading
+                                    | ← a.media-left img.media-object
+                br
+                .js-html-inspector(data-remove-target='p:first')
+                    strong ul.media-list
+                    ul.media-list
+                        li.media
+                            a.media-left.media-bottom(href='#')
+                                img.media-object(src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+', alt='.media-object')
+                            .media-body
+                                h4.media-heading li.media .media-body h4.media-heading
+                                | ← a.media-left.
+                                u media-bottom
+                                | img.media-object
+                                .media
+                                    a.media-left(href='#')
+                                        img.media-object(src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+', alt='.media-object')
+                                    .media-body
+                                        h4.media-heading .media .media-body h4.media-heading
+                                        | ← a.media-left img.media-object
+                        li.media
+                            .media-body
+                                h4.media-heading li.media .media-body h4.media-heading
+                                | a.media-right img.media-object →
+                            a.media-right(href='#')
+                                img.media-object(src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+', alt='.media-object')
+                .section-divider
+                h2#list-group List group
+                .js-html-inspector(data-remove-target='p:first')
+                    p
+                        strong ul.list-group
+                    ul.list-group
+                        li.list-group-item li.list-group-item
+                        li.list-group-item
+                            | List item #2
+                            span.badge .badge
+                        li.list-group-item List item #3
+                        li.list-group-item.active(href='#')
+                            | .list-group-item.active
+                        li.list-group-item List item #5
+                .row
+                    .col-md-6.js-html-inspector(data-remove-target='p:first')
+                        p
+                            strong div.list-group
+                        .list-group
+                            a.list-group-item(href='#')
+                                | a.list-group-item
+                            a.list-group-item.list-group-item-success(href='#')
+                                | a.list-group-item.list-group-item-success
+                            a.list-group-item.list-group-item-info(href='#')
+                                | a.list-group-item.list-group-item-info
+                            a.list-group-item.list-group-item-warning(href='#')
+                                | a.list-group-item.list-group-item-warning
+                            a.list-group-item.list-group-item-danger(href='#')
+                                | a.list-group-item.list-group-item-danger
+
+
+                .js-html-inspector(data-remove-target='p:first')
+                    p
+                        strong div.list-group
+                    .list-group
+                        a.list-group-item.active(href='#')
+                            h4.list-group-item-heading h4.list-group-item-heading
+                            p.list-group-item-text p.list-group-item-text
+                        a.list-group-item(href='#')
+                            h4.list-group-item-heading List group item heading
+                            p.list-group-item-text Paragraph
+                .section-divider
+                h2#panels Panels
+                .js-html-inspector(data-remove-target='p:first')
+                    p
+                        strong .panel.panel-default
+                    .panel.panel-default
+                        .panel-heading .panel-heading
+                        .panel-body .panel-body
+                        .panel-footer .panel-footer
+                .row
+                    .col-sm-6
+                        p
+                            strong .panel.panel-success
+                        .panel.panel-success
+                            .panel-heading .panel-heading
+                            .panel-body .panel-body
+                    .col-sm-6
+                        p
+                            strong .panel.panel-info
+                        .panel.panel-info
+                            .panel-heading .panel-heading
+                            .panel-body .panel-body
+                .row
+                    .col-sm-6
+                        p
+                            strong .panel.panel-warning (with table)
+                        .panel.panel-warning
+                            .panel-heading .panel-heading
+                            table.table
+                                thead
+                                    tr
+                                        th Header
+                                        th Header
+                                        th Header
+                                tbody
+                                    tr
+                                        td Data
+                                        td Data
+                                        td Data
+                                    tr
+                                        td Data
+                                        td Data
+                                        td Data
+                    .col-sm-6
+                        p
+                            strong .panel.panel-danger (with list group)
+                        .panel.panel-danger
+                            .panel-heading .panel-heading
+                            ul.list-group
+                                li.list-group-item List item
+                                li.list-group-item List item
+                                li.list-group-item List item
+                .section-divider
+                h2#wells Wells
+                .row
+                    .col-sm-4
+                        .well.well-lg .well.well-lg
+                    .col-sm-4
+                        .well .well
+                    .col-sm-4
+                        .well.well-sm .well.well-sm
+
+                .section-divider
+                h1#javascript.page-header Javascript
+                h2#js-modals Modals
+                p.bse-buttons
+                    | Via data attributes:
+                    | &nbsp;
+                    code data-toggle="modal"
+                    | &nbsp;
+                    code data-target="#modal"
+                    | &nbsp;
+                    a.btn.btn-primary(data-toggle='modal', href='#modal') Launch modal
+                    | &nbsp;
+                p.bse-buttons
+                    | Via Javascript:
+                    | &nbsp;
+                    code $('#modal').modal()
+                    | &nbsp;
+                    a.btn.btn-primary(href='#', onclick='$("#modal").modal(); return false;') Launch modal
+                div
+                    a.btn.btn-primary(data-toggle='modal', href='#modal-lg') Large modal
+                    | &nbsp;
+                    a.btn.btn-primary(data-toggle='modal', href='#modal-sm') Small modal
+                br
+                br
+                // Static modal example
+                .js-html-inspector(data-remove-target='["p:first","span"]')
+                    // PLEASE NOTE: Only use inline style for static display
+                    .modal(style='display: block; position: static; overflow: hidden; padding:10px 0')
+                        .modal-content
+                            .modal-header
+                                button.close(type='button') &times;
+                                h4.modal-title .modal-header h4.modal-title
+                            .modal-body
+                                | .modal-body
+                            .modal-footer
+                                span .modal-footer &nbsp;
+                                button.btn.btn-default(data-dismiss='modal', type='button') Close
+                                button.btn.btn-primary(type='button') Button
+                br
+                br
+                p
+                    | Options:
+                    code backdrop: true|false|'static'
+                    code keyboard: true|false
+                    code show: true|false
+                    code remote: false|path
+                p
+                    | Methods:
+                    code .modal('toggle')
+                    code .modal('show')
+                    code .modal('hide')
+                p
+                    | Events:
+                    code show.bs.modal
+                    code shown.bs.modal
+                    code hide.bs.modal
+                    code hidden.bs.modal
+                    code loaded.bs.modal
+                // Default modal
+                #modal.modal.fade
+                    .modal-dialog
+                        .modal-content
+                            .modal-header
+                                button.close(data-dismiss='modal', type='button') &times;
+                                h4.modal-title .modal-title
+                            .modal-body
+                                | .modal-body
+                            .modal-footer
+                                button.btn.btn-default(data-dismiss='modal', type='button') Close
+                                button.btn.btn-primary(type='button') Button
+                // Optional sizes
+                #modal-lg.modal.fade
+                    .modal-dialog.modal-lg
+                        .modal-content
+                            .modal-header
+                                button.close(data-dismiss='modal', type='button') &times;
+                                h4.modal-title .modal-title
+                            .modal-body
+                                | .modal-body
+                            .modal-footer
+                                button.btn.btn-default(data-dismiss='modal', type='button') Close
+                                button.btn.btn-primary(type='button') Button
+                #modal-sm.modal.fade
+                    .modal-dialog.modal-sm
+                        .modal-content
+                            .modal-header
+                                button.close(data-dismiss='modal', type='button') &times;
+                                h4.modal-title .modal-title
+                            .modal-body
+                                | .modal-body
+                            .modal-footer
+                                button.btn.btn-default(data-dismiss='modal', type='button') Close
+                                button.btn.btn-primary(type='button') Button
+                .section-divider
+                h2#js-dropdowns Dropdowns
+                p
+                    | Via data attributes:
+                    code data-toggle="dropdown"
+                .js-html-inspector
+                    .dropdown
+                        a.btn.btn-primary(data-toggle='dropdown', href='#')
+                            | Dropdown trigger
+                        ul.dropdown-menu
+                            li
+                                a(href='#') Link #1
+                            li
+                                a(href='#') Link #2
+                p
+                    br
+                    | Via Javascript:
+                    code $('.dropdown-toggle').dropdown()
+                    | (
+                    code data-toggle="dropdown"
+                    | still required)
+                p
+                    | Methods:
+                    code .dropdown('toggle')
+                p
+                    | Events:
+                    code show.bs.dropdown
+                    code shown.bs.dropdown
+                    code hide.bs.dropdown
+                    code hidden.bs.dropdown
+                .section-divider
+                h2#js-tabs Tabs
+                p
+                    | Via data attributes:
+                    code data-toggle="tab"
+                .js-html-inspector
+                    ul.nav.nav-tabs
+                        li.active
+                            a(data-toggle='tab', href='#js-tab-pane1') Tab #1
+                        li
+                            a(data-toggle='tab', href='#js-tab-pane2') Tab #2
+                    .tab-content
+                        #js-tab-pane1.tab-pane.active
+                            p Content #1: .table-content .tab-pane.active
+                        #js-tab-pane2.tab-pane
+                            p Content #2: .table-content .tab-pane
+                p
+                    | Via Javascript:
+                    code $(this).tab('show')
+                .js-html-inspector
+                    ul.nav.nav-tabs
+                        li.active
+                            a(href='#js-tab-pane3', onclick='$(this).tab("show"); return false;') Tab #1
+                        li
+                            a(href='#js-tab-pane4', onclick='$(this).tab("show"); return false;') Tab #2
+                    .tab-content
+                        #js-tab-pane3.tab-pane.fade.in.active
+                            p Content #1: .table-content .tab-pane.fade.in.active
+                        #js-tab-pane4.tab-pane.fade
+                            p Content #2: .table-content .tab-pane.fade
+                p
+                    | Events:
+                    code show.bs.tab
+                    code shown.bs.tab
+                .section-divider
+                h2#js-tooltips Tooltips
+                p
+                    | Usage:
+                    code $('[data-toggle="tooltip"]').tooltip()
+                .text-center.js-html-inspector
+                    button.btn.btn-primary(data-toggle='tooltip', data-placement='left', type='button', title='[title]')
+                        | Left
+                    | &nbsp;
+                    button.btn.btn-primary(data-toggle='tooltip', data-placement='top', type='button', title='[title]')
+                        | Top
+                    | &nbsp;
+                    button.btn.btn-primary(data-toggle='tooltip', data-placement='bottom', type='button', title='[title]')
+                        | Bottom
+                    | &nbsp;
+                    button.btn.btn-primary(data-toggle='tooltip', data-placement='right', type='button', title='[title]')
+                        | Right
+                .text-center.js-html-inspector
+                    // Static tooltip
+                    .tooltip.bottom(style='display: inline-block; position: relative; opacity: 1; filter: alpha(opacity=100); z-index: 1000;')
+                        .tooltip-inner You must initialize them yourself
+                        .tooltip-arrow
+                p
+                    | Options:
+                    code animation: true|false
+                    code html: false|true
+                    code selector: false|string
+                    br
+                    code title: ''|function
+                    code container: false|string
+                    br
+                    code placement: top|location|auto|function
+                    br
+                    code trigger: hover focus|click|manual
+                    br
+                    code delay: 0|{show:500, hide:100}
+                p
+                    | Methods:
+                    code .tooltip('show')
+                    code .tooltip('hide')
+                    code .tooltip('toggle')
+                    code .tooltip('destroy')
+                p
+                    | Events:
+                    code show.bs.tooltip
+                    code shown.bs.tooltip
+                    code hide.bs.tooltip
+                    code hidden.bs.tooltip
+                .section-divider
+                h2#js-popovers Popovers
+                p
+                    | Usage:
+                    code $('[data-toggle="popover"]').popover()
+                .text-center.js-html-inspector
+                    button.btn.btn-primary(data-toggle='popover', data-placement='left', data-content='[data-content]', type='button', title='[title]')
+                        | Left
+                    | &nbsp;
+                    button.btn.btn-primary(data-toggle='popover', data-placement='top', data-content='[data-content]', type='button', title='[title]')
+                        | Top
+                    | &nbsp;
+                    button.btn.btn-primary(data-toggle='popover', data-placement='bottom', data-content='[data-content]', type='button', title='[title]')
+                        | Bottom
+                    | &nbsp;
+                    button.btn.btn-primary(data-toggle='popover', data-placement='right', data-content='[data-content]', type='button', title='[title]')
+                        | Right
+                .text-center.js-html-inspector
+                    // Static popover
+                    .popover.bottom(style='display: inline-block; position: relative; z-index: 1000;')
+                        .arrow
+                        h3.popover-title Popover
+                        .popover-content
+                            p You must initialize them yourself
+                p
+                    br
+                    | Options:
+                    code animation: true|false
+                    code html: false|true
+                    code selector: false|string
+                    br
+                    code title: ''|function
+                    code content: ''|function
+                    code container: false|string
+                    br
+                    code placement: right|location|auto|function
+                    br
+                    code trigger: click|hover|focus|manual
+                    br
+                    code delay: 0|{show:500, hide:100}
+                p
+                    | Methods:
+                    code .popover('show')
+                    code .popover('hide')
+                    code .popover('toggle')
+                    code .popover('destroy')
+                p
+                    | Events:
+                    code show.bs.popover
+                    code shown.bs.popover
+                    code hide.bs.popover
+                    code hidden.bs.popover
+                .section-divider
+                h2#js-alerts Alerts
+                p
+                    | Via data attributes (close button):
+                    code data-dismiss="alert"
+
+                .alert.alert-danger.fade.in
+                    button.close(data-dismiss='alert', type='button') &times;
+                    | .alert.alert-danger.fade.in
+                p
+                    | Via Javascript:
+                    code $('.alert').alert()
+                p
+                    | Methods:
+                    code .alert('close')
+                p
+                    | Events:
+                    code close.bs.alert
+                    code closed.bs.alert
+                .section-divider
+                h2#js-buttons Toggle Buttons
+                p
+                    |  button:
+                    code data-loading-text="Loading..."
+                    code data-complete-text="Completed"
+                br
+                .js-html-inspector
+                    | Single toggle:
+                    | &nbsp;
+                    button.btn.btn-toggle(data-toggle='button', type='button')
+                        | [data-toggle="button"]
+                    | &nbsp;
+                br
+                .bse-buttons
+                    | Checkbox default:
+                    code data-toggle="buttons"
+                    .row
+                        .col-md-12
+                            br
+                            p
+                                strong .btn-group-lg.btn-group-toggle
+                            .btn-group-lg.btn-group-toggle(data-toggle='buttons')
+                                label.btn
+                                    input(type='checkbox')
+                                    | #1
+                                label.btn
+                                    input(type='checkbox')
+                                    | #2
+                                label.btn
+                                    input(type='checkbox')
+                                    | #3
+                                label.btn
+                                    input(type='checkbox')
+                                    | #4
+                        .col-md-12
+                            br
+                            p
+                                strong .btn-group.btn-group-toggle
+                            .btn-group.btn-group-toggle(data-toggle='buttons')
+                                label.btn
+                                    input(type='checkbox')
+                                    | #1
+                                label.btn
+                                    input(type='checkbox')
+                                    | #2
+                                label.btn
+                                    input(type='checkbox')
+                                    | #3
+                                label.btn
+                                    input(type='checkbox')
+                                    | #4
+                        .col-md-12
+                            br
+                            p
+                                strong .btn-group-sm.btn-group-toggle
+                            .btn-group-sm.btn-group-toggle(data-toggle='buttons')
+                                label.btn
+                                    input(type='checkbox')
+                                    | #1
+                                label.btn
+                                    input(type='checkbox')
+                                    | #2
+                                label.btn
+                                    input(type='checkbox')
+                                    | #3
+                                label.btn
+                                    input(type='checkbox')
+                                    | #4
+                        .col-md-12
+                            br
+                            p
+                                strong .btn-group-xs.btn-group-toggle
+                            .btn-group-xs.btn-group-toggle(data-toggle='buttons')
+                                label.btn
+                                    input(type='checkbox')
+                                    | #1
+                                label.btn
+                                    input(type='checkbox')
+                                    | #2
+                                label.btn
+                                    input(type='checkbox')
+                                    | #3
+                                label.btn
+                                    input(type='checkbox')
+                                    | #4
+                br
+                .bse-buttons
+                    | Radio:
+                    code data-toggle="buttons"
+                    .btn-group.btn-group-toggle(data-toggle='buttons')
+                        label.btn
+                            input(name='optionsRadiosJS', type='radio', value='option1', checked='')
+                            | #1
+                        label.btn
+                            input(name='optionsRadiosJS', type='radio', value='option2')
+                            | #2
+                        label.btn
+                            input(name='optionsRadiosJS', type='radio', value='option3')
+                            | #3
+                        label.btn
+                            input(name='optionsRadiosJS', type='radio', value='option2')
+                            | #4
+                br
+                p
+                    | Methods:
+                    code .button('toggle')
+                    code .button('loading')
+                    code .button('reset')
+                    code .button(string)
+
+                .section-divider
+            .col-md-3
+                div
+                    #sidebar.sidebar.hidden-print
+                        ul.nav.sidenav.doc-nav
+                            li.active
+                                a(href='#css') CSS
+                                ul.nav
+                                    li
+                                        a(href='#typography') Typography
+                                    li
+                                        a(href='#icons') Icons
+                                    li
+                                        a(href='#tables') Tables
+                                    li
+                                        a(href='#forms') Forms
+                                    li
+                                        a(href='#buttons') Buttons
+                                    li
+                                        a(href='#images') Images
+                                    li
+                                        a(href='#helper-classes') Helper classes
+                            li
+                                a(href='#components') Components
+                                ul.nav
+                                    li
+                                        a(href='#dropdowns') Dropdowns
+                                    li
+                                        a(href='#button-groups') Button groups
+                                    li
+                                        a(href='#input-groups') Input groups
+                                    li
+                                        a(href='#navs') Navs
+                                    li
+                                        a(href='#navbar') Navbar
+                                    li
+                                        a(href='#breadcrumbs') Breadcrumbs
+                                    li
+                                        a(href='#pagination') Pagination
+                                    li
+                                        a(href='#labels') Labels
+                                    li
+                                        a(href='#jumbotron') Jumbotron
+                                    li
+                                        a(href='#page-header') Page header
+                                    li
+                                        a(href='#thumbnails') Thumbnails
+                                    li
+                                        a(href='#alerts') Alerts
+                                    li
+                                        a(href='#progress-bars') Progress bars
+                                    li
+                                        a(href='#media-object') Media object
+                                    li
+                                        a(href='#list-group') List group
+                                    li
+                                        a(href='#panels') Panels
+                                    li
+                                        a(href='#wells') Wells
+                            li
+                                a(href='#javascript') Javascript
+                                ul.nav
+                                    li
+                                        a(href='#js-modals') Modals
+                                    li
+                                        a(href='#js-dropdowns') Dropdowns
+                                    li
+                                        a(href='#js-tabs') Tabs
+                                    li
+                                        a(href='#js-tooltips') Tooltips
+                                    li
+                                        a(href='#js-popovers') Popovers
+                                    li
+                                        a(href='#js-alerts') Alerts
+                                    li
+                                        a(href='#js-buttons') Buttons
+                                    li
+                                        a(href='#js-collapse') Collapse
